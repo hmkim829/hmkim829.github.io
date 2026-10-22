@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>넛지성경 (Nudge Bible) - 매일의 거룩한 습관</title>
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0b1120;
+            --card-bg: rgba(22, 33, 62, 0.7);
+            --primary: #3b82f6;
+            --accent: #60a5fa;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+            background-image: 
+                radial-gradient(circle at 50% 20%, rgba(59, 130, 246, 0.15), transparent 60%),
+                radial-gradient(circle at 80% 80%, rgba(30, 58, 138, 0.2), transparent 50%);
+        }
+        .container {
+            max-width: 680px;
+            width: 100%;
+            text-align: center;
+            backdrop-filter: blur(16px);
+            background: var(--card-bg);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 28px;
+            padding: 48px 32px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            border-radius: 26px;
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4);
+            margin-bottom: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+        }
+        h1 {
+            font-size: 32px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            margin-bottom: 8px;
+            color: #ffffff;
+        }
+        .subtitle {
+            font-size: 16px;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 16px;
+            letter-spacing: 0.5px;
+        }
+        .description {
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--text-muted);
+            margin-bottom: 36px;
+            word-break: keep-all;
+        }
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 36px;
+        }
+        .feature-chip {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 8px 16px;
+            border-radius: 9999px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #e2e8f0;
+        }
+        .btn-download {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: #2563eb;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 700;
+            padding: 16px 32px;
+            border-radius: 16px;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            box-shadow: 0 10px 20px -5px rgba(37, 99, 235, 0.4);
+        }
+        .btn-download:hover {
+            background: #1d4ed8;
+            transform: translateY(-2px);
+            box-shadow: 0 14px 24px -5px rgba(37, 99, 235, 0.5);
+        }
+        .footer {
+            margin-top: 40px;
+            font-size: 13px;
+            color: #64748b;
+            line-height: 1.8;
+        }
+        .footer a {
+            color: var(--text-muted);
+            text-decoration: none;
+            margin: 0 8px;
+        }
+        .footer a:hover {
+            color: var(--accent);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="icon.png" alt="넛지성경 아이콘" class="app-icon">
+        <h1>넛지성경</h1>
+        <div class="subtitle">NUDGE BIBLE</div>
+        <p class="description">
+            당신의 일상에 자연스럽게 스며드는 말씀.<br>
+            부드러운 스와이프 제스처와 스마트한 통독 플랜으로 매일의 거룩한 습관을 만들어 드립니다.
+        </p>
+
+        <div class="features">
+            <span class="feature-chip">📖 방해 없는 성경 읽기</span>
+            <span class="feature-chip">📅 맞춤 통독 플랜</span>
+            <span class="feature-chip">✍️ 묵상 일기 & 메모</span>
+            <span class="feature-chip">🔔 말씀 넛지 알림</span>
+        </div>
+
+        <div>
+            <a href="https://play.google.com/store/apps/details?id=com.boazlab.nudgebible" target="_blank" class="btn-download">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M3.609 1.814L13.792 12 3.61 22.186a2.007 2.007 0 0 1-.22-.927V2.741c0-.34.08-.654.22-.927zM15.207 13.414l2.586 2.586-13.064 7.542 10.478-10.128zm0-2.828L4.729.458l13.064 7.542-2.586 2.586zm1.414 1.414l3.586 2.071c.78.45.78 1.187 0 1.637l-3.586 2.071-2.121-2.121 2.121-2.121z"/>
+                </svg>
+                Google Play에서 다운로드
+            </a>
+        </div>
+
+        <div class="footer">
+            <p>© 2026 HM Lab. All rights reserved.</p>
+            <p>
+                <a href="https://treasure-lake-184.notion.site/Nudge-Bible-3cca460f68b680fb9956fa3163e7a033" target="_blank">개인정보처리방침</a> •
+                <a href="app-ads.txt" target="_blank">app-ads.txt</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
