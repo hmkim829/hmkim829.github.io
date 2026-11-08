@@ -1,10 +1,10 @@
 {
-  "latest_version": "v1.0.5",
-  "version_code": 105,
+  "latest_version": "v1.0.6",
+  "version_code": 106,
   "updated_at": "2026-11-08",
-  "download_url": "https://hmkim829.github.io/bible/nudge_ai_v1.0.5.enc",
-  "release_note": "창세기 1장~25장(아브라함 생애 전체) 100% 빈틈없는 연속 완결! 구약·신약 총 1,065구절 탑재",
-  "total_books": 9,
-  "total_chapters": 39,
-  "total_verses": 1065
+  "download_url": "https://hmkim829.github.io/bible/nudge_ai_v1.0.6.enc",
+  "release_note": "열왕기상(1~3장 솔로몬, 17~19장 엘리야) 및 창세기 26~28장(이삭·야곱 벧엘 서원) 대확장",
+  "total_books": 10,
+  "total_chapters": 48,
+  "total_verses": 1386
 }
