@@ -1,10 +1,10 @@
 {
-  "latest_version": "v1.0.11",
-  "version_code": 111,
+  "latest_version": "v1.0.12",
+  "version_code": 112,
   "updated_at": "2026-11-11",
-  "download_url": "https://hmkim829.github.io/bible/nudge_ai_v1.0.11.enc",
-  "release_note": "고린도전서 1~16장 전장 100% 완전 완결(총 437절 탑재) 및 로마서/요한복음/창세기/열왕기상 전장 완결(총 4,331구절 탑재)",
+  "download_url": "https://hmkim829.github.io/bible/nudge_ai_v1.0.12.enc",
+  "release_note": "요한계시록 1~22장 전장 100% 완전 완결(총 404절 탑재) 및 고린도전서/로마서/요한복음/창세기/열왕기상 전장 완결(총 4,687구절 탑재)",
   "total_books": 10,
-  "total_chapters": 135,
-  "total_verses": 4331
+  "total_chapters": 155,
+  "total_verses": 4687
 }
