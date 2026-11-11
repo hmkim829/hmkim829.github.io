@@ -1,10 +1,10 @@
 {
-  "latest_version": "v1.0.13",
-  "version_code": 113,
+  "latest_version": "v1.0.14",
+  "version_code": 114,
   "updated_at": "2026-11-11",
-  "download_url": "https://hmkim829.github.io/bible/nudge_ai_v1.0.13.enc",
-  "release_note": "출애굽기 1~40장 전장 100% 완전 완결(총 1,213절 탑재) 및 창세기/열왕기상/요한복음/로마서/고린도전서/요한계시록 7개 권 완전 완결(총 5,821구절 탑재)",
-  "total_books": 10,
-  "total_chapters": 192,
-  "total_verses": 5821
+  "download_url": "https://hmkim829.github.io/bible/nudge_ai_v1.0.14.enc",
+  "release_note": "갈라디아서·에베소서·빌립보서·골로새서 4권 전장 100% 완전 완결 탑재(총 503절) 및 성경 11개 권 완전 완결(총 6,324구절 탑재, 성경 전체 20.3% 돌파)",
+  "total_books": 14,
+  "total_chapters": 212,
+  "total_verses": 6324
 }
