@@ -1,10 +1,10 @@
 {
-  "latest_version": "v1.0.14",
-  "version_code": 114,
-  "updated_at": "2026-11-11",
-  "download_url": "https://hmkim829.github.io/bible/nudge_ai_v1.0.14.enc",
-  "release_note": "갈라디아서·에베소서·빌립보서·골로새서 4권 전장 100% 완전 완결 탑재(총 503절) 및 성경 11개 권 완전 완결(총 6,324구절 탑재, 성경 전체 20.3% 돌파)",
+  "latest_version": "v1.0.15",
+  "version_code": 115,
+  "updated_at": "2026-11-12",
+  "download_url": "https://hmkim829.github.io/bible/nudge_ai_v1.0.15.enc",
+  "release_note": "마태복음 전 28장 1,071절 100% 완전 완결 탑재 및 성경 12개 권 완전 완결(총 7,313구절 탑재, 성경 전체 23.51% 돌파)",
   "total_books": 14,
-  "total_chapters": 212,
-  "total_verses": 6324
+  "total_chapters": 238,
+  "total_verses": 7313
 }
