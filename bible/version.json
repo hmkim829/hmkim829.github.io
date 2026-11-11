@@ -1,10 +1,10 @@
 {
-  "latest_version": "v1.0.8",
-  "version_code": 108,
+  "latest_version": "v1.0.9",
+  "version_code": 109,
   "updated_at": "2026-11-11",
-  "download_url": "https://hmkim829.github.io/bible/nudge_ai_v1.0.8.enc",
-  "release_note": "창세기 1~50장 100% 완전 연속 완결(29~50장 737절 대확장) 및 열왕기상 1~22장 전장 완결(총 2,721구절 탑재)",
+  "download_url": "https://hmkim829.github.io/bible/nudge_ai_v1.0.9.enc",
+  "release_note": "요한복음 1~21장 전장 100% 완전 완결(총 879절 탑재) 및 창세기/열왕기상 전장 완결(총 3,513구절 탑재)",
   "total_books": 10,
-  "total_chapters": 86,
-  "total_verses": 2721
+  "total_chapters": 105,
+  "total_verses": 3513
 }
