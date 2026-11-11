@@ -1,10 +1,10 @@
 {
-  "latest_version": "v1.0.7",
-  "version_code": 107,
+  "latest_version": "v1.0.8",
+  "version_code": 108,
   "updated_at": "2026-11-11",
-  "download_url": "https://hmkim829.github.io/bible/nudge_ai_v1.0.7.enc",
-  "release_note": "열왕기상 1~22장 100% 완전 연속 완결(4~16장 및 20~22장 598절 대확장) 및 실시간 피드백 반영(창 1:1, 왕상 3:26 문장 직관성 개선)",
+  "download_url": "https://hmkim829.github.io/bible/nudge_ai_v1.0.8.enc",
+  "release_note": "창세기 1~50장 100% 완전 연속 완결(29~50장 737절 대확장) 및 열왕기상 1~22장 전장 완결(총 2,721구절 탑재)",
   "total_books": 10,
-  "total_chapters": 64,
-  "total_verses": 1984
+  "total_chapters": 86,
+  "total_verses": 2721
 }
