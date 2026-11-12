@@ -1,10 +1,10 @@
 {
-  "latest_version": "v1.0.20",
-  "version_code": 120,
-  "updated_at": "2026-11-12",
-  "download_url": "https://hmkim829.github.io/bible/nudge_ai_v1.0.20.enc",
-  "release_note": "데살로니가전서·후서 전 8장 136절 100% 완전 완결 탑재 및 성경 18개 권 완전 완결(총 10,541구절 탑재, 성경 전체 33.89% 돌파)",
-  "total_books": 20,
-  "total_chapters": 327,
-  "total_verses": 10541
+  "latest_version": "v1.0.21",
+  "version_code": 121,
+  "updated_at": "2026-11-13",
+  "download_url": "https://hmkim829.github.io/bible/nudge_ai_v1.0.21.enc",
+  "release_note": "목회서신 4권(디모데전서·후서, 디도서, 빌레몬서) 전 14장 267절 100% 완전 완결 탑재 및 성경 22개 권 완전 완결(총 10,808구절 탑재, 성경 전체 34.75% 돌파)",
+  "total_books": 24,
+  "total_chapters": 341,
+  "total_verses": 10808
 }
