@@ -1,10 +1,10 @@
 {
-  "latest_version": "v1.0.25",
-  "version_code": 125,
+  "latest_version": "v1.0.26",
+  "version_code": 126,
   "updated_at": "2026-11-13",
-  "download_url": "https://hmkim829.github.io/bible/nudge_ai_v1.0.25.enc",
-  "release_note": "소선지서 8권(요나·오바댜·나훔·하박국·스바냐·학개·요엘·말라기 총 391절) 100% 완전 완결 탑재! (성경 66권 중 44권 완결, 총 13,274구절 탑재, 성경 전체 42.68% 돌파)",
-  "total_books": 44,
-  "total_chapters": 453,
-  "total_verses": 13274
+  "download_url": "https://hmkim829.github.io/bible/nudge_ai_v1.0.26.enc",
+  "release_note": "구약 소선지서 12권 전권(호세아·요엘·아모스·오바댜·요나·미가·나훔·하박국·스바냐·학개·스가랴·말라기) 100% 완전 완결 탑재! (성경 66권 중 48권 완결, 총 13,933구절 탑재, 성경 전체 44.80% 돌파)",
+  "total_books": 48,
+  "total_chapters": 497,
+  "total_verses": 13933
 }
