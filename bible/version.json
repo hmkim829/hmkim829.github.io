@@ -1,10 +1,10 @@
 {
-  "latest_version": "v1.0.26",
-  "version_code": 126,
+  "latest_version": "v1.0.27",
+  "version_code": 127,
   "updated_at": "2026-11-13",
-  "download_url": "https://hmkim829.github.io/bible/nudge_ai_v1.0.26.enc",
-  "release_note": "구약 소선지서 12권 전권(호세아·요엘·아모스·오바댜·요나·미가·나훔·하박국·스바냐·학개·스가랴·말라기) 100% 완전 완결 탑재! (성경 66권 중 48권 완결, 총 13,933구절 탑재, 성경 전체 44.80% 돌파)",
-  "total_books": 48,
-  "total_chapters": 497,
-  "total_verses": 13933
+  "download_url": "https://hmkim829.github.io/bible/nudge_ai_v1.0.27.enc",
+  "release_note": "예레미야 애가(5장 154절)·에스더(10장 167절) 100% 완전 완결 탑재! (성경 66권 중 50권 완결, 512개 장, 총 14,254구절 탑재, 성경 전체 45.83% 돌파)",
+  "total_books": 50,
+  "total_chapters": 512,
+  "total_verses": 14254
 }
