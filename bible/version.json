@@ -1,10 +1,10 @@
 {
-  "latest_version": "v1.0.15",
-  "version_code": 115,
+  "latest_version": "v1.0.16",
+  "version_code": 116,
   "updated_at": "2026-11-12",
-  "download_url": "https://hmkim829.github.io/bible/nudge_ai_v1.0.15.enc",
-  "release_note": "마태복음 전 28장 1,071절 100% 완전 완결 탑재 및 성경 12개 권 완전 완결(총 7,313구절 탑재, 성경 전체 23.51% 돌파)",
-  "total_books": 14,
-  "total_chapters": 238,
-  "total_verses": 7313
+  "download_url": "https://hmkim829.github.io/bible/nudge_ai_v1.0.16.enc",
+  "release_note": "사도행전 전 28장 1,007절 100% 완전 완결 탑재 및 성경 13개 권 완전 완결(총 8,320구절 탑재, 성경 전체 26.75% 돌파)",
+  "total_books": 15,
+  "total_chapters": 266,
+  "total_verses": 8320
 }
