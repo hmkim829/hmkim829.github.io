@@ -1,10 +1,10 @@
 {
-  "latest_version": "v1.0.18",
-  "version_code": 118,
+  "latest_version": "v1.0.19",
+  "version_code": 119,
   "updated_at": "2026-11-12",
-  "download_url": "https://hmkim829.github.io/bible/nudge_ai_v1.0.18.enc",
-  "release_note": "누가복음 전 24장 1,151절 100% 완전 완결 탑재, 사복음서 전권 완결 및 성경 15개 권 완전 완결(총 10,149구절 탑재, 성경 전체 32.63% 돌파)",
-  "total_books": 17,
-  "total_chapters": 306,
-  "total_verses": 10149
+  "download_url": "https://hmkim829.github.io/bible/nudge_ai_v1.0.19.enc",
+  "release_note": "고린도후서 전 13장 256절 100% 완전 완결 탑재 및 성경 16개 권 완전 완결(총 10,405구절 탑재, 성경 전체 33.45% 돌파)",
+  "total_books": 18,
+  "total_chapters": 319,
+  "total_verses": 10405
 }
