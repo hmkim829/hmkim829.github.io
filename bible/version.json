@@ -1,10 +1,10 @@
 {
-  "latest_version": "v1.0.40",
-  "version_code": 140,
+  "latest_version": "v1.0.41",
+  "version_code": 141,
   "updated_at": "2026-11-13",
-  "download_url": "https://hmkim829.github.io/bible/nudge_ai_v1.0.40.enc",
-  "release_note": "욥기(42장 1,070절) 100% 완전 완결 탑재! 시가서 4권 완결! (총 62권 완결, 876개 장, 총 24,736구절 탑재, 성경 전체 79.53% 달성!)",
-  "total_books": 62,
-  "total_chapters": 876,
-  "total_verses": 24736
+  "download_url": "https://hmkim829.github.io/bible/nudge_ai_v1.0.41.enc",
+  "release_note": "에스겔(48장 1,273절) 100% 완전 완결 탑재! (총 63권 완결, 924개 장, 총 26,009구절 탑재, 성경 전체 83.62% 달성!)",
+  "total_books": 63,
+  "total_chapters": 924,
+  "total_verses": 26009
 }
