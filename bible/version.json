@@ -1,10 +1,10 @@
 {
-  "latest_version": "v1.0.21",
-  "version_code": 121,
+  "latest_version": "v1.0.22",
+  "version_code": 122,
   "updated_at": "2026-11-13",
-  "download_url": "https://hmkim829.github.io/bible/nudge_ai_v1.0.21.enc",
-  "release_note": "목회서신 4권(디모데전서·후서, 디도서, 빌레몬서) 전 14장 267절 100% 완전 완결 탑재 및 성경 22개 권 완전 완결(총 10,808구절 탑재, 성경 전체 34.75% 돌파)",
-  "total_books": 24,
-  "total_chapters": 341,
-  "total_verses": 10808
+  "download_url": "https://hmkim829.github.io/bible/nudge_ai_v1.0.22.enc",
+  "release_note": "신약 성경 27권 전 260장 7,957구절 100% 완전 완결 탑재! (히브리서, 야고보서, 베드로전후, 요한1·2·3서, 유다서 포함 총 32개 권 11,543구절 탑재, 성경 전체 37.11% 돌파)",
+  "total_books": 32,
+  "total_chapters": 375,
+  "total_verses": 11543
 }
