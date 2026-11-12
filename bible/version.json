@@ -1,10 +1,10 @@
 {
-  "latest_version": "v1.0.27",
-  "version_code": 127,
+  "latest_version": "v1.0.28",
+  "version_code": 128,
   "updated_at": "2026-11-13",
-  "download_url": "https://hmkim829.github.io/bible/nudge_ai_v1.0.27.enc",
-  "release_note": "예레미야 애가(5장 154절)·에스더(10장 167절) 100% 완전 완결 탑재! (성경 66권 중 50권 완결, 512개 장, 총 14,254구절 탑재, 성경 전체 45.83% 돌파)",
+  "download_url": "https://hmkim829.github.io/bible/nudge_ai_v1.0.28.enc",
+  "release_note": "다니엘(12장 357절)·에스라(10장 280절) 100% 완전 완결 탑재! (신약 27권 전권 완결 + 구약 23권 완결 = 총 50권 완결, 534개 장, 총 14,891구절 탑재, 성경 전체 47.88% 돌파)",
   "total_books": 50,
-  "total_chapters": 512,
-  "total_verses": 14254
+  "total_chapters": 534,
+  "total_verses": 14891
 }
