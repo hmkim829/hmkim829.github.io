@@ -1,10 +1,10 @@
 {
-  "latest_version": "v1.0.22",
-  "version_code": 122,
+  "latest_version": "v1.0.23",
+  "version_code": 123,
   "updated_at": "2026-11-13",
-  "download_url": "https://hmkim829.github.io/bible/nudge_ai_v1.0.22.enc",
-  "release_note": "신약 성경 27권 전 260장 7,957구절 100% 완전 완결 탑재! (히브리서, 야고보서, 베드로전후, 요한1·2·3서, 유다서 포함 총 32개 권 11,543구절 탑재, 성경 전체 37.11% 돌파)",
-  "total_books": 32,
-  "total_chapters": 375,
-  "total_verses": 11543
+  "download_url": "https://hmkim829.github.io/bible/nudge_ai_v1.0.23.enc",
+  "release_note": "잠언 전 31장 915절 100% 완전 완결 탑재! (신약 27권 전권 완결 + 구약 창세기·출애굽기·열왕기상·잠언 완결, 총 12,458구절 탑재, 성경 전체 40.05% 돌파)",
+  "total_books": 33,
+  "total_chapters": 406,
+  "total_verses": 12458
 }
