@@ -1,10 +1,10 @@
 {
-  "latest_version": "v1.0.32",
-  "version_code": 132,
+  "latest_version": "v1.0.33",
+  "version_code": 133,
   "updated_at": "2026-11-13",
-  "download_url": "https://hmkim829.github.io/bible/nudge_ai_v1.0.32.enc",
-  "release_note": "사무엘하(24장 695절) 100% 완전 완결 탑재! (신약 27권 전권 완결 + 구약 27권 완결 = 총 54권 완결, 616개 장, 총 17,268구절 탑재, 성경 전체 55.52% 달성!)",
-  "total_books": 54,
-  "total_chapters": 616,
-  "total_verses": 17268
+  "download_url": "https://hmkim829.github.io/bible/nudge_ai_v1.0.33.enc",
+  "release_note": "열왕기하(25장 719절) 100% 완전 완결 탑재! (신약 27권 전권 완결 + 구약 28권 완결 = 총 55권 완결, 641개 장, 총 17,987구절 탑재, 성경 전체 57.83% 달성!)",
+  "total_books": 55,
+  "total_chapters": 641,
+  "total_verses": 17987
 }
