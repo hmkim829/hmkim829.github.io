@@ -1,10 +1,10 @@
 {
-  "latest_version": "v1.0.38",
-  "version_code": 138,
+  "latest_version": "v1.0.39",
+  "version_code": 139,
   "updated_at": "2026-11-13",
-  "download_url": "https://hmkim829.github.io/bible/nudge_ai_v1.0.38.enc",
-  "release_note": "신명기(34장 959절) 100% 완전 완결 탑재! 모세오경 4권 완결! (총 60권 완결, 798개 장, 총 22,378구절 탑재, 성경 전체 71.95% 달성!)",
-  "total_books": 60,
-  "total_chapters": 798,
-  "total_verses": 22378
+  "download_url": "https://hmkim829.github.io/bible/nudge_ai_v1.0.39.enc",
+  "release_note": "민수기(36장 1,288절) 100% 완전 완결 탑재! 모세오경 5권 전권 100% 완전 완결! (총 61권 완결, 834개 장, 총 23,666구절 탑재, 성경 전체 76.09% 달성!)",
+  "total_books": 61,
+  "total_chapters": 834,
+  "total_verses": 23666
 }
