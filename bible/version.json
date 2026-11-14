@@ -1,9 +1,9 @@
 {
-  "latest_version": "v1.0.47",
-  "version_code": 147,
+  "latest_version": "v1.0.48",
+  "version_code": 148,
   "updated_at": "2026-11-14",
-  "download_url": "https://hmkim829.github.io/bible/nudge_ai_v1.0.47.enc",
-  "release_note": "열왕기상 4장 23절 암사슴 오탈자 교정 및 6장 38절 성전 건축 기간 원문 정합성 개선 (v1.0.47)",
+  "download_url": "https://hmkim829.github.io/bible/nudge_ai_v1.0.48.enc",
+  "release_note": "창세기 1장 1절 수식 표현 간결화('태초에 하나님께서 하늘과 땅을 창조하셨습니다') (v1.0.48)",
   "total_books": 66,
   "total_chapters": 1189,
   "total_verses": 31102
