@@ -1,9 +1,9 @@
 {
-  "latest_version": "v1.0.46",
-  "version_code": 146,
+  "latest_version": "v1.0.47",
+  "version_code": 147,
   "updated_at": "2026-11-14",
-  "download_url": "https://hmkim829.github.io/bible/nudge_ai_v1.0.46.enc",
-  "release_note": "열왕기상 4장 솔로몬 내각 관직 표현 및 마태복음 1:1 사용자 피드백 개선 반영 완료 (v1.0.46)",
+  "download_url": "https://hmkim829.github.io/bible/nudge_ai_v1.0.47.enc",
+  "release_note": "열왕기상 4장 23절 암사슴 오탈자 교정 및 6장 38절 성전 건축 기간 원문 정합성 개선 (v1.0.47)",
   "total_books": 66,
   "total_chapters": 1189,
   "total_verses": 31102
