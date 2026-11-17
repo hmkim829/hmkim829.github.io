@@ -1,9 +1,9 @@
 {
-  "latest_version": "v1.0.48",
-  "version_code": 148,
-  "updated_at": "2026-11-14",
-  "download_url": "https://hmkim829.github.io/bible/nudge_ai_v1.0.48.enc",
-  "release_note": "창세기 1장 1절 수식 표현 간결화('태초에 하나님께서 하늘과 땅을 창조하셨습니다') (v1.0.48)",
+  "latest_version": "v1.0.49",
+  "version_code": 149,
+  "updated_at": "2026-11-17",
+  "download_url": "https://hmkim829.github.io/bible/nudge_ai_v1.0.49.enc",
+  "release_note": "잠언 19장 6절 문맥 표현 개선 및 마태복음 1장 1절 족보 표현 직관화 (v1.0.49)",
   "total_books": 66,
   "total_chapters": 1189,
   "total_verses": 31102
