@@ -3,164 +3,442 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>넛지성경 (Nudge Bible) - 매일의 거룩한 습관</title>
+    <title>넛지성경 (Nudge Bible) - 당신의 일상에 스며드는 말씀, AI 쉬운 성경 & 맞춤 통독</title>
+    
+    <!-- Open Graph / Meta -->
+    <meta name="description" content="어려운 개역한글도 현대어로 쉽게! 넛지 AI 나란히 보기, 0.01초 초고속 키워드 검색, 나만의 맞춤 통독 플랜으로 일상에 거룩한 습관을 만들어 드립니다.">
+    <meta property="og:title" content="넛지성경 - AI 쉬운 성경 & 맞춤 통독">
+    <meta property="og:description" content="당신의 일상에 스며드는 말씀. 개역한글과 넛지 AI 번역 나란히 대조, 초고속 검색, 맞춤 통독 플랜.">
+    <meta property="og:image" content="icon.png">
+    <meta property="og:type" content="website">
+
     <link rel="icon" type="image/png" href="icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
     <style>
         :root {
-            --bg-color: #0b1120;
-            --card-bg: rgba(22, 33, 62, 0.7);
+            --bg: #090d16;
+            --surface: rgba(18, 25, 43, 0.75);
+            --surface-hover: rgba(26, 36, 61, 0.85);
+            --border: rgba(255, 255, 255, 0.08);
             --primary: #3b82f6;
+            --primary-glow: rgba(59, 130, 246, 0.35);
             --accent: #60a5fa;
             --text-main: #f8fafc;
-            --text-muted: #94a3b8;
+            --text-sub: #94a3b8;
+            --text-muted: #64748b;
         }
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+            -webkit-font-smoothing: antialiased;
         }
+
         body {
-            background-color: var(--bg-color);
+            background-color: var(--bg);
             color: var(--text-main);
             min-height: 100vh;
             display: flex;
             flex-direction: column;
+            overflow-x: hidden;
+            background-image: 
+                radial-gradient(circle at 50% 0%, rgba(59, 130, 246, 0.18), transparent 50%),
+                radial-gradient(circle at 85% 30%, rgba(37, 99, 235, 0.12), transparent 45%),
+                radial-gradient(circle at 15% 70%, rgba(30, 58, 138, 0.15), transparent 50%);
+        }
+
+        /* Top Nav */
+        nav {
+            width: 100%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 24px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: var(--text-main);
+        }
+
+        .brand-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px var(--primary-glow);
+        }
+
+        .brand-title {
+            font-size: 20px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+
+        .btn-nav-download {
+            background: rgba(59, 130, 246, 0.15);
+            color: var(--accent);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            padding: 8px 18px;
+            border-radius: 9999px;
+            font-size: 14px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .btn-nav-download:hover {
+            background: var(--primary);
+            color: #ffffff;
+            box-shadow: 0 4px 16px var(--primary-glow);
+        }
+
+        /* Hero Section */
+        .hero {
+            max-width: 900px;
+            margin: 40px auto 30px;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(59, 130, 246, 0.12);
+            border: 1px solid rgba(59, 130, 246, 0.25);
+            color: var(--accent);
+            padding: 6px 16px;
+            border-radius: 9999px;
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: 0.3px;
+        }
+
+        .hero-title {
+            font-size: clamp(32px, 5vw, 48px);
+            font-weight: 900;
+            line-height: 1.25;
+            letter-spacing: -1px;
+            margin-bottom: 18px;
+            background: linear-gradient(180deg, #ffffff 30%, #cbd5e1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            word-break: keep-all;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(16px, 2.5vw, 19px);
+            line-height: 1.6;
+            color: var(--text-sub);
+            max-width: 640px;
+            margin: 0 auto 36px;
+            word-break: keep-all;
+        }
+
+        .cta-group {
+            display: flex;
             align-items: center;
             justify-content: center;
-            padding: 40px 20px;
-            background-image: 
-                radial-gradient(circle at 50% 20%, rgba(59, 130, 246, 0.15), transparent 60%),
-                radial-gradient(circle at 80% 80%, rgba(30, 58, 138, 0.2), transparent 50%);
+            gap: 16px;
+            flex-wrap: wrap;
         }
-        .container {
-            max-width: 680px;
+
+        .btn-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            color: #ffffff;
+            font-size: 17px;
+            font-weight: 700;
+            padding: 16px 36px;
+            border-radius: 18px;
+            text-decoration: none;
+            transition: all 0.25s ease;
+            box-shadow: 0 12px 28px -6px rgba(37, 99, 235, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .btn-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 16px 32px -4px rgba(37, 99, 235, 0.65);
+            filter: brightness(1.05);
+        }
+
+        /* Screenshot Showcase */
+        .showcase {
             width: 100%;
+            max-width: 1100px;
+            margin: 50px auto 60px;
+            padding: 0 20px;
+        }
+
+        .section-header {
             text-align: center;
-            backdrop-filter: blur(16px);
-            background: var(--card-bg);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            border-radius: 28px;
-            padding: 48px 32px;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            margin-bottom: 32px;
         }
-        .app-icon {
-            width: 120px;
-            height: 120px;
-            border-radius: 26px;
-            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4);
-            margin-bottom: 24px;
-            border: 1px solid rgba(255, 255, 255, 0.12);
-        }
-        h1 {
-            font-size: 32px;
+
+        .section-title {
+            font-size: 26px;
             font-weight: 800;
             letter-spacing: -0.5px;
             margin-bottom: 8px;
-            color: #ffffff;
         }
-        .subtitle {
-            font-size: 16px;
-            color: var(--accent);
-            font-weight: 600;
-            margin-bottom: 16px;
-            letter-spacing: 0.5px;
+
+        .section-desc {
+            color: var(--text-sub);
+            font-size: 15px;
         }
-        .description {
-            font-size: 16px;
-            line-height: 1.6;
-            color: var(--text-muted);
-            margin-bottom: 36px;
-            word-break: keep-all;
-        }
-        .features {
+
+        .screenshot-track {
             display: flex;
-            justify-content: center;
-            gap: 12px;
-            flex-wrap: wrap;
-            margin-bottom: 36px;
+            gap: 20px;
+            overflow-x: auto;
+            padding: 10px 4px 30px;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
         }
-        .feature-chip {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            padding: 8px 16px;
-            border-radius: 9999px;
-            font-size: 14px;
-            font-weight: 600;
-            color: #e2e8f0;
+
+        .screenshot-track::-webkit-scrollbar {
+            height: 8px;
         }
-        .btn-download {
-            display: inline-flex;
+
+        .screenshot-track::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 999px;
+        }
+
+        .screenshot-track::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 999px;
+        }
+
+        .screenshot-card {
+            flex: 0 0 250px;
+            scroll-snap-align: center;
+            border-radius: 24px;
+            overflow: hidden;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.6);
+            transition: all 0.3s ease;
+        }
+
+        .screenshot-card:hover {
+            transform: translateY(-6px);
+            border-color: rgba(96, 165, 250, 0.3);
+            box-shadow: 0 24px 48px -10px rgba(37, 99, 235, 0.3);
+        }
+
+        .screenshot-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Feature Grid */
+        .features {
+            max-width: 1050px;
+            margin: 0 auto 70px;
+            padding: 0 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+        }
+
+        .feature-card {
+            background: var(--surface);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--border);
+            border-radius: 22px;
+            padding: 30px 24px;
+            transition: all 0.25s ease;
+        }
+
+        .feature-card:hover {
+            background: var(--surface-hover);
+            transform: translateY(-4px);
+            border-color: rgba(96, 165, 250, 0.25);
+        }
+
+        .feature-icon-box {
+            width: 48px;
+            height: 48px;
+            border-radius: 14px;
+            background: rgba(59, 130, 246, 0.12);
+            display: flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
-            background: #2563eb;
-            color: #ffffff;
-            font-size: 16px;
+            font-size: 22px;
+            margin-bottom: 18px;
+            border: 1px solid rgba(59, 130, 246, 0.2);
+        }
+
+        .feature-card h3 {
+            font-size: 19px;
             font-weight: 700;
-            padding: 16px 32px;
-            border-radius: 16px;
-            text-decoration: none;
-            transition: all 0.2s ease;
-            box-shadow: 0 10px 20px -5px rgba(37, 99, 235, 0.4);
+            margin-bottom: 10px;
+            color: #ffffff;
         }
-        .btn-download:hover {
-            background: #1d4ed8;
-            transform: translateY(-2px);
-            box-shadow: 0 14px 24px -5px rgba(37, 99, 235, 0.5);
+
+        .feature-card p {
+            font-size: 14.5px;
+            line-height: 1.6;
+            color: var(--text-sub);
+            word-break: keep-all;
         }
-        .footer {
-            margin-top: 40px;
-            font-size: 13px;
-            color: #64748b;
-            line-height: 1.8;
-        }
-        .footer a {
+
+        /* Footer */
+        footer {
+            margin-top: auto;
+            border-top: 1px solid var(--border);
+            padding: 40px 20px;
+            text-align: center;
             color: var(--text-muted);
-            text-decoration: none;
-            margin: 0 8px;
+            font-size: 13.5px;
+            background: rgba(11, 17, 32, 0.6);
         }
-        .footer a:hover {
+
+        .footer-links {
+            margin-top: 12px;
+        }
+
+        .footer-links a {
+            color: var(--text-sub);
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.2s ease;
+        }
+
+        .footer-links a:hover {
             color: var(--accent);
+        }
+
+        @media (max-width: 640px) {
+            .screenshot-card {
+                flex: 0 0 210px;
+            }
+            .hero {
+                margin-top: 20px;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <img src="icon.png" alt="넛지성경 아이콘" class="app-icon">
-        <h1>넛지성경</h1>
-        <div class="subtitle">NUDGE BIBLE</div>
-        <p class="description">
-            당신의 일상에 자연스럽게 스며드는 말씀.<br>
-            부드러운 스와이프 제스처와 스마트한 통독 플랜으로 매일의 거룩한 습관을 만들어 드립니다.
-        </p>
 
-        <div class="features">
-            <span class="feature-chip">📖 방해 없는 성경 읽기</span>
-            <span class="feature-chip">📅 맞춤 통독 플랜</span>
-            <span class="feature-chip">✍️ 묵상 일기 & 메모</span>
-            <span class="feature-chip">🔔 말씀 넛지 알림</span>
+    <!-- Header / Nav -->
+    <nav>
+        <a href="#" class="brand">
+            <img src="icon.png" alt="넛지성경" class="brand-icon">
+            <span class="brand-title">넛지성경</span>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.boazlab.nudgebible" target="_blank" class="btn-nav-download">
+            앱 다운로드
+        </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-badge">
+            ✨ AI 쉬운 성경 & 맞춤 통독
         </div>
-
-        <div>
-            <a href="https://play.google.com/store/apps/details?id=com.boazlab.nudgebible" target="_blank" class="btn-download">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+        <h1 class="hero-title">
+            당신의 일상에 스며드는 말씀
+        </h1>
+        <p class="hero-subtitle">
+            어려운 개역한글도 현대어로 쉽게 대조해 읽는 <strong>넛지 AI 쉬운 성경</strong>.<br>
+            0.01초 초고속 키워드 검색과 맞춤 통독 플랜으로 매일의 은혜를 더해보세요.
+        </p>
+        <div class="cta-group">
+            <a href="https://play.google.com/store/apps/details?id=com.boazlab.nudgebible" target="_blank" class="btn-cta">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M3.609 1.814L13.792 12 3.61 22.186a2.007 2.007 0 0 1-.22-.927V2.741c0-.34.08-.654.22-.927zM15.207 13.414l2.586 2.586-13.064 7.542 10.478-10.128zm0-2.828L4.729.458l13.064 7.542-2.586 2.586zm1.414 1.414l3.586 2.071c.78.45.78 1.187 0 1.637l-3.586 2.071-2.121-2.121 2.121-2.121z"/>
                 </svg>
-                Google Play에서 다운로드
+                Google Play에서 무료 다운로드
             </a>
         </div>
+    </section>
 
-        <div class="footer">
-            <p>© 2026 HM Lab. All rights reserved.</p>
-            <p>
-                <a href="https://treasure-lake-184.notion.site/Nudge-Bible-3cca460f68b680fb9956fa3163e7a033" target="_blank">개인정보처리방침</a> •
-                <a href="app-ads.txt" target="_blank">app-ads.txt</a>
-            </p>
+    <!-- App Screenshot Carousel -->
+    <section class="showcase">
+        <div class="section-header">
+            <h2 class="section-title">말씀에만 온전히 몰입하는 경험</h2>
+            <p class="section-desc">깔끔하고 직관적인 화면으로 성경 읽기가 더 즐거워집니다</p>
         </div>
-    </div>
+        <div class="screenshot-track">
+            <div class="screenshot-card">
+                <img src="screenshots/store_screenshot_1.jpg" alt="초고속 키워드 검색">
+            </div>
+            <div class="screenshot-card">
+                <img src="screenshots/store_screenshot_2.jpg" alt="넛지 AI 번역 나란히 보기">
+            </div>
+            <div class="screenshot-card">
+                <img src="screenshots/store_screenshot_3.jpg" alt="나만의 맞춤 통독 플랜">
+            </div>
+            <div class="screenshot-card">
+                <img src="screenshots/store_screenshot_4.jpg" alt="은혜로운 구절 형광펜 및 메모">
+            </div>
+            <div class="screenshot-card">
+                <img src="screenshots/store_screenshot_5.jpg" alt="실시간 글자 크기 조절 및 다크모드">
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Features Grid -->
+    <section class="features">
+        <div class="section-header">
+            <h2 class="section-title">넛지성경만의 특별한 기능</h2>
+            <p class="section-desc">성도들의 실제 성경 읽기 습관을 위해 정성껏 빚어냈습니다</p>
+        </div>
+        <div class="grid">
+            <div class="feature-card">
+                <div class="feature-icon-box">✨</div>
+                <h3>넛지 AI 나란히 보기</h3>
+                <p>개역한글 구절 바로 아래에 쉬운 현대어 번역을 함께 표시하여, 난해한 성경 본문도 막힘없이 술술 이해할 수 있습니다.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon-box">🔍</div>
+                <h3>초고속 전권 키워드 검색</h3>
+                <p>성경 66권 31,102구절 전체를 0.01초 만에 초고속 검색! 구약/신약/권별 필터링과 정렬로 원하는 구절을 즉시 찾습니다.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon-box">📅</div>
+                <h3>나만의 맞춤 통독 플랜</h3>
+                <p>30일, 100일, 1년 등 원하는 기간을 선택하면 매일 읽을 최적의 분량을 자동 계산해 성경 완독을 든든하게 돕습니다.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon-box">👁️</div>
+                <h3>시니어 맞춤 글자 & 야간 모드</h3>
+                <p>상단 '가' 버튼으로 글자 크기를 언제든 시원하게 조절하고, 눈의 피로를 덜어주는 다크 모드로 편안하게 묵상하세요.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Boaz Lab. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="https://treasure-lake-184.notion.site/Nudge-Bible-3cca460f68b680fb9956fa3163e7a033" target="_blank">개인정보처리방침</a>
+            <span>•</span>
+            <a href="https://play.google.com/store/apps/details?id=com.boazlab.nudgebible" target="_blank">Google Play 스토어</a>
+            <span>•</span>
+            <a href="app-ads.txt" target="_blank">app-ads.txt</a>
+        </div>
+    </footer>
+
 </body>
 </html>
